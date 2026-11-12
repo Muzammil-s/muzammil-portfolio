@@ -1,31 +1,48 @@
-# Muzammil Shabbir — Portfolio
+# Muzammil Shabbir — Software Developer Portfolio
 
-A responsive, static portfolio website built with HTML, CSS and vanilla JavaScript. It is ready to deploy on Vercel without a build step or paid services.
+A dark-first, modular developer portfolio built to showcase **11 completed, tested, and live-deployed software projects** across Full-Stack Web Development, Data Analytics, and Defensive Cybersecurity.
 
-## Run locally
+## Highlights
 
-Open `index.html` in a browser, or use the VS Code Live Server extension.
+- **Genuine Application Previews:** Every project card uses authentic widescreen (`1024×640`) captures from the live running applications — never placeholder artwork.
+- **Interactive Technology Ecosystem:** Click any technical capability to trace which completed projects implement it.
+- **Project Filtering & Architectural Modals:** Filter across *All (11)*, *Web Development*, *Data Analytics*, and *Cybersecurity*, inspect engineering decisions, and launch both GitHub repositories and verified live demos.
+- **Data Intelligence & Cybersecurity Sandboxes:** Embedded statistical highlights and a live browser-local URL risk inspector powered by the LinkLens ruleset.
+- **SVG Architecture & Verification Diagrams:** Visualizes dual-mode Express/static architecture and the 4-stage QA workflow.
+- **Future Innovation Lab:** Tracks 8 planned and exploratory research tracks honestly (`Exploring`, `Prototype`, `In Progress`, `Planned`).
 
-## Deploy to Vercel
+## Completed 11-Project Index
 
-### Option A — Vercel Drop
-1. Open https://vercel.com/drop and sign in.
-2. Drag the `portfolio-vercel` folder (or a ZIP containing its contents) into the page.
-3. Name the project `muzammil-shabbir-portfolio` or another available name.
-4. Deploy and copy the generated `.vercel.app` URL.
+| # | Project | Track | Repository |
+|---|---|---|---|
+| 1 | **SocialSphere** | Web Development | [codealpha-socialmedia](https://github.com/Muzammil-s/codealpha-socialmedia) |
+| 2 | **CommerceHub** | Web Development | [CodeAlpha-Ecommerence-store](https://github.com/Muzammil-s/CodeAlpha-Ecommerence-store) |
+| 3 | **Fresh Basket** | Web Development | [velora-commerce](https://github.com/Muzammil-s/velora-commerce) |
+| 4 | **LinkLens Safety Lab** | Cybersecurity | [LinkLens-URL-Safety-Lab](https://github.com/Muzammil-s/LinkLens-URL-Safety-Lab) |
+| 5 | **DevKit Workbench** | Web Development | [DevKit-Developer-Toolbox](https://github.com/Muzammil-s/DevKit-Developer-Toolbox) |
+| 6 | **NetworkScope** | Cybersecurity | [CodeAlpha_Basic_Network_Sniffer](https://github.com/Muzammil-s/CodeAlpha_Basic_Network_Sniffer) |
+| 7 | **Marketplace UI** | Web Development | [Daraz-Clone](https://github.com/Muzammil-s/Daraz-Clone) |
+| 8 | **StockFlow POS** | Web & Analytics | [stockflow-pos](https://github.com/Muzammil-s/stockflow-pos) |
+| 9 | **StudyRoute Intelligence** | Data Analytics | [studyroute-intelligence](https://github.com/Muzammil-s/studyroute-intelligence) |
+| 10 | **DataLens Analytics Studio** | Data Analytics | [datalens-analytics-studio](https://github.com/Muzammil-s/datalens-analytics-studio) |
+| 11 | **CareerOS** | Data & Web | [careeros-tracker](https://github.com/Muzammil-s/careeros-tracker) |
 
-### Option B — GitHub-connected deployment
-1. Create a public GitHub repository named `muzammil-portfolio`.
-2. Upload the contents of this folder to the repository root (make sure `index.html` is at the root).
-3. In Vercel choose **Add New → Project**, import the repository, and deploy. No build command is required for this static site.
-4. Future pushes to the connected production branch trigger deployments.
+## Local Run & Automated Verification
 
-## Personal details to verify before publishing
-- Confirm the email and LinkedIn links in `index.html` are still the preferred public contact methods.
-- Confirm each live preview still works. The Social Media and E-Commerce links are labelled as frontend previews because their backend services are not deployed here.
-- Update project descriptions as you complete more work. Do not list a project as finished until it is functional and documented.
+Serve the directory over HTTP (required for ES modules):
 
-## Design notes
-- Responsive dark technical aesthetic with subtle gradients, code-editor hero visual, CSS-built project previews, scroll reveals and mobile navigation.
-- No paid API, backend, external JavaScript library or framework is required.
-- Google Fonts is an optional external font source; the page falls back to system fonts if it is unavailable.
+```bash
+npx serve .
+# or: python -m http.server 8080
+```
+
+Run integrity and unit tests:
+
+```bash
+node --test tests/portfolio.test.mjs
+```
+
+## Notes & Limitations
+
+- The static quick-brief contact composer validates inputs locally and opens a pre-populated `mailto:` email draft or copies the brief to your clipboard; it does not send telemetry or claim server-side delivery.
+- Any sample analytics numbers illustrated inside the Data Intelligence showcase (`StudyRoute Intelligence`, `DataLens`, `CareerOS`) are labeled clearly as illustrative sample figures.
